@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+ 
+.center{
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+ 
+html,body{
+    height: 100%;
+    background-color:whitesmoke;
+}
+
+ 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    background-color: bisque;
+
+}
+ 
+.logo img{
+    width: 100px;
+    right: 50px;
+
+}
+.logo{
+    position: relative;
+    width: 50%;
+    float: left;
+    text-align: left;
+    
+}
+ 
+.menu nav{
+    padding-top: 30px;
+    width: 100%;
+    text-align: right;
+    color: #7AB05B;
+    border-bottom: 130px;
+    background: transparent;
+}
+ 
+.menu a{
+    color:black;
+    text-decoration: none;
+    font-weight:bold;
+    margin-right: 15px;
+    top: 20px;
+    border-radius: 50%;
+    border-bottom: 300px 300px;
+    border-left: 100px;
+ 
+}
+ 
+section.sobre{
+    height: calc ( 100% - 200px );
+    position:relative;
+}
+.extras{
+    position:fixed;
+    bottom: -80px;
+    right: -180px;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background-color:#7AB05B;
+}
+
+.extras img{
+    max-width: 600px;
+    position:fixed;
+    right: 600px;
+    width: 900px;
+    margin: auto;
+    bottom: 100px;
+    left: 900px;
+    border-radius: 50%;
+}
+ 
+.social-media{
+    position: fixed;
+    right: 10px;
+    top:10px;
+}
+
+.social-media img{
+    width: 50px;
+}
+
+.texto-sobre{
+    margin-top: 100px;
+}
+
+.texto-sobre h1{
+    font-size: 65px;
+}
+
+.texto-sobre p1{
+    margin: 20px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    max-width: 800px;
+    line-height:1.5;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+.texto-sobre button{
+    border: 30px;
+    background-color: #7AB05B;
+    text-decoration: none;
+    color: white;
+    border-radius: 60px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.texto-sobre a{
+    color:white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 150px; /* Ajuste de altura para telas menores */
+    }
+
+    .logo img {
+        width: 80px; /* Ajuste de tamanho do logo para telas menores */
+    }
+
+    .menu a {
+        margin-right: 10px; /* Ajuste de margem para links do menu */
+        right: 30px;
+        text-align: left;
+        width: -5px;
+        height: 10px;
+        border: 0;
+        font-size: 12px;
+    }
+
+    .texto-sobre h1 {
+        right: 5px;
+        font-size: 22px; /* Ajuste de tamanho de fonte para o título */
+        right: 40px;
+        bottom: 30px;
+        display:block;
+    }
+
+    .texto-sobre p1 {
+        font-size: 14px; /* Ajuste de tamanho de fonte para o texto */
+        right: 30px;
+    }
+
+    .texto-sobre button {
+        width: 80px; /* Ajuste de largura do botão */
+        height: 25px; /* Ajuste de altura do botão */
+    }
+
+    .extras{
+        width: 200px;
+        height: 200px;
+        right: -50px;
+        bottom: 30px;
+        position: fixed;
+    }
+
+    .extras img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .extras2 img{
+        width: 200px;
+        height: 200px;
+        bottom: 10px;
+        right: -30px;
+    }
+
+    .social-media{
+        width: 140px;
+        right: 140px;
+    }
+}
+
+

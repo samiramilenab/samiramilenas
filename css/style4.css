@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ 
+.center{
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+ 
+html,body{
+    height: 100%;
+    background-color:whitesmoke;
+}
+ 
+header{
+    height: 200px;
+    padding: 20px 0;
+}
+ 
+.logo img{
+    display:block;
+    width: 100px;
+    right: 50px;
+
+}
+.logo{
+    position: relative;
+    width: 50%;
+    float: left;
+    text-align: left;
+    
+}
+ 
+.menu nav{
+    padding-top: 30px;
+    width: 100%;
+    text-align: right;
+}
+ 
+.menu a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    top: 20px;
+ 
+}
+ 
+section.sobre{
+    height: calc ( 100% - 200px );
+    position:relative;
+}
+ 
+.social-media{
+    position: fixed;
+    right: 10px;
+    top:10px;
+}
+
+.social-media img{
+    display:block;
+    width: 50px;
+}
+
+.texto-sobre{
+    margin-top: 100px;
+}
+
+.texto-sobre h1{
+    font-size: 65px;
+}
+
+.texto-sobre p1{
+    margin: 20px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    max-width: 800px;
+    line-height:1.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.texto-sobre button{
+    border: 30px;
+    background-color: #7AB05B;
+    text-decoration: none;
+    color: white;
+    border-radius: 60px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.texto-sobre a{
+    color:white;
+    text-decoration: none;
+}
+
+.extras{
+    position: fixed;
+    bottom: -80px;
+    right: -170px;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background-color:#7AB05B;
+}
+ 
+.video-container {
+        position: fixed;
+        width: 700px; /* Defina o tamanho do contêiner */
+        height: 700px; /* Defina o tamanho do contêiner */
+        border-radius: 50%; /* Torna o contêiner redondo */
+        overflow:auto; /* Certifique-se de que o vídeo redondo não ultrapasse o contêiner */
+        margin: 30px; /* Centraliza o contêiner */
+        right: -50px;
+        bottom: -30px;
+        transform: none; /* Remover qualquer transformação anterior */
+        border: 50%;
+}
+
+.round-video {
+    width: 100%; /* Faz o vídeo preencher todo o contêiner */
+    height: 100%; /* Mantém a proporção do vídeo */
+    border-radius: 100%; /* Torna o vídeo redondo */
+    border: 50%;
+}
+  
+.fade {
+    animation: fadeEffect 5.0s;
+}
+  
+@keyframes fadeEffect {
+    from {
+      opacity: 5.0;
+    }
+    to {
+      opacity: 5.0;
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        height: 150px; /* Ajuste de altura para telas menores */
+    }
+
+    .logo img {
+        width: 80px; /* Ajuste de tamanho do logo para telas menores */
+    }
+
+    .menu a {
+        margin-right: 10px; /* Ajuste de margem para links do menu */
+        right: 30px;
+        text-align: left;
+        display:inline-table;
+        width: -5px;
+        height: 25px;
+        border: 0;
+        font-size: 12px;
+    }
+
+    .texto-sobre h1 {
+        font-size: 22px; /* Ajuste de tamanho de fonte para o título */
+        right: 40px;
+        bottom: 30px;
+        display:block;
+        text-align:left;
+
+    }
+
+    .texto-sobre p1 {
+        font-size: 10px; /* Ajuste de tamanho de fonte para o texto */
+        right: 30px;
+        text-align: justify;
+    }
+
+    .texto-sobre button {
+        width: 80px; /* Ajuste de largura do botão */
+        height: 25px; /* Ajuste de altura do botão */
+    }
+
+    .extras{
+        width: 20px;
+        height: 20px;
+        right: -50px;
+        bottom: 30px;
+        position:fixed;
+    }
+
+    .red{
+        width: 150px;
+        height: 150px;
+        right: -50px;
+        bottom: 100px;
+        position:fixed;
+        bottom: 80px;
+    }
+
+    .slideshow-container{
+        width: 50px;
+        height: 50px;
+        bottom: 40px;
+        right: 50px;
+        position:fixed;
+    }
+
+    .video-container{
+        width: 200px;
+        height: 200px;
+        bottom: 10px;
+    }
+
+    .social-media{
+        width: 30px;
+        right: 20px;
+    }
+
+    .zoomed-video{
+        width: 150px;
+        height: 150px;
+        bottom: 50px;
+        right: 50px;
+        position:fixed;
+        border-radius: 50%;
+    }
+}
