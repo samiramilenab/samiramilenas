@@ -18,8 +18,13 @@ html,body{
 }
  
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 200px;
-    padding: 20px 0;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    background-color: bisque;
 }
  
 .logo img{
